@@ -17,6 +17,20 @@
  */
 namespace Kornheiser\Event;
 
-interface Event {
+class TargetedHandler implements Handler {
     
+    public function __construct(
+        private string $targetEventClass,
+        private Handler $handler
+    ): void {}
+    
+    public function onHandle(Event $ev): void {
+        if ($ev::class === $this->getTarget()) {
+            $this->handler->onHandle($ev);
+        }
+    }
+    
+    public function getTarget(): string {
+        return $this->targetEventClass;
+    }
 }

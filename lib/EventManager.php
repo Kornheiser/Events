@@ -17,6 +17,27 @@
  */
 namespace Kornheiser\Event;
 
-interface Event {
+class EventManager implements EventInvoker {
     
+    /** @var Handler[]*/
+    protected array $handlers = [];
+    
+    public function call(Event $ev): void {
+        foreach ($this->getHandlers() as $handler) {
+            $handler->onHandle($ev);
+        }
+    }
+    
+    public function addHandler(Handler $handler): void {
+        $this->handlers[] = $handler;
+    }
+    
+    public function removeHandlers(): void {
+        $this->handlers = [];
+    }
+    
+    /** @return Handler[]*/
+    public function getHandlers(): array {
+        return $this->handlers;
+    }
 }

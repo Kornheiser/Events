@@ -17,6 +17,7 @@
  */
 namespace Kornheiser\Event;
 
-interface Event {
+interface Handler {
     
+    public function onHandle(Event $event): void;
 }

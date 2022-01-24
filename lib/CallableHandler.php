@@ -17,6 +17,13 @@
  */
 namespace Kornheiser\Event;
 
-interface Event {
+class CallableHandler implements Handler {
     
+    public function __construct(
+        private callable $callback
+    ): void {}
+    
+    public function onHandle(Event $ev): void {
+        ($this->callback)($ev);
+    }
 }

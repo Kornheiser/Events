@@ -17,6 +17,7 @@
  */
 namespace Kornheiser\Event;
 
-interface Event {
+interface EventInvoker {
     
+    public function call(Event $event): void;
 }
