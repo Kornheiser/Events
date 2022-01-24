@@ -1,7 +1,5 @@
 ![Events](./logo.jpg?raw=true)
 
-# Events
-
 ## Example 
 
 ### Make ur own Event
