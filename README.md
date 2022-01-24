@@ -1,5 +1,9 @@
 ![Events](./logo.jpg?raw=true)
 
+## Installation
+```bash
+composer require kornheiser/events
+```
 ## Example 
 
 ### Make ur own Event
