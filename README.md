@@ -1,5 +1,10 @@
 ![Events](./logo.jpg?raw=true)
 
+[![Version](https://img.shields.io/packagist/v/kornheiser/events?style=plastic)](https://packagist.org/packages/kornheiser/events)
+[![Downloads](https://img.shields.io/packagist/dt/kornheiser/events?style=plastic)](https://packagist.org/packages/kornheiser/events)
+[![License](https://img.shields.io/packagist/l/kornheiser/events?style=plastic)](https://en.wikipedia.org/wiki/MIT_License)
+[![PHPVersion](https://img.shields.io/packagist/php-v/kornheiser/events?style=plastic)](https://packagist.org/packages/kornheiser/events)
+
 ## Installation
 ```bash
 composer require kornheiser/events
