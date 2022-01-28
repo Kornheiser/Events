@@ -1,4 +1,4 @@
-![Events](./logo.jpg?raw=true)
+![Events](./logotype.jpg?raw=true)
 
 [![Version](https://img.shields.io/packagist/v/kornheiser/events?style=plastic)](https://packagist.org/packages/kornheiser/events)
 [![Downloads](https://img.shields.io/packagist/dt/kornheiser/events?style=plastic)](https://packagist.org/packages/kornheiser/events)
